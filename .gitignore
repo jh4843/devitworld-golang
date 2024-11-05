@@ -1,25 +1,32 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+# Go 관련 파일
+/go.mod
+/go.sum
+
+# Go 빌드 아티팩트
 *.exe
-*.exe~
 *.dll
 *.so
 *.dylib
-
-# Test binary, built with `go test -c`
 *.test
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# 디렉토리 및 바이너리 파일
+bin/
+out/
+dist/
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# GoLand와 VS Code 등의 IDE 관련 파일
+.idea/
+.vscode/
+*.code-workspace
 
-# Go workspace file
-go.work
-go.work.sum
+# OS 관련 파일
+.DS_Store
+Thumbs.db
 
-# env file
-.env
+# 기타 캐시 파일
+*.log
+*.tmp
+*.cache
+
+# Git 관련 파일
+*.orig
